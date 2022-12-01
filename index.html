@@ -139,17 +139,17 @@
     </section>
 
     <!--Gallery-->
-    <section id="gallery">
-      <div class="container">
+    <section id="gallery" class="mx-auto container">
+      <div class="container row w-100 py-0 mx-auto">
         <div class="row mb-5">
           <div class="col-md-8 mx-auto text-center">
             <h6 class="subtitle">Project</h6>
             <h2>My project</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ex sapiente dicta fugit dolorum excepturi, sint nostrum accusantium quos molestias quia, consectetur possimus a distinctio doloribus praesentium assumenda. Nam, temporibus.</p>
           </div>
-          <div class="row g-4 mx-auto">
+          <div class="row g-4 mx-auto justify-content-center">
             <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
+              <div class="card mx-auto" style="width: 20rem;">
                 <img src="./img/background.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -162,7 +162,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
+              <div class="card mx-auto" style="width: 20rem;">
                 <img src="./img/background.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -175,7 +175,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card" style="width: 20rem;">
+              <div class="card mx-auto" style="width: 20rem;">
                 <img src="./img/background.jpg" alt="" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -208,21 +208,49 @@
           </div>
         </div>
 
-        <form action="" class="row g-3 justify-content-center">
+        <form action="" class="row g-3 justify-content-center needs-validation" novalidate>
           <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Full Name">
+            <label for="validationCustom01" class="form-label">Ingrese su nombre</label>
+            <input type="text" class="form-control" placeholder="Full Name" id="nameId" required>
+            <div class="valid-feedback">
+              Todo ok!
+            </div>
+            <div class="invalid-feedback">
+              es necesario ingresar su nombre
+            </div>
           </div>
           <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Enter e-mail">
+            <label for="surnameId" class="form-label">Ingrese su correo</label>
+            <input type="text" class="form-control" placeholder="Enter e-mail" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="valid-feedback">
+              Todo ok!
+            </div>
+            <div class="invalid-feedback">
+              Es necesario ingresar su correo
+            </div>
           </div>
           <div class="col-md-10">
-            <input type="text" class="form-control" placeholder="Enter Subject">
+            <label for="validationCustom03"  class="form-label">Ingrese su asunto</label>
+            <input type="text" class="form-control" placeholder="Enter Subject" id="validationCustom03" required>
+            <div class="valid-feedback">
+              Todo ok!
+            </div>
+            <div class="invalid-feedback">
+              Es necesario que ingreses un asunto
+            </div>
           </div>
           <div class="col-md-10">
-            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter message"></textarea>
+            <label for="validationDefault05" class="form-label">Ingrese mensaje</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter message" id="validationDefault05" required></textarea>
+            <div class="valid-feedback">
+              Todo ok!
+            </div>
+            <div class="invalid-feedback">
+              Es necesario que ingreses un mensaje
+            </div>
           </div>
           <div class="col-md-10 d-grid">
-            <button class="btn-hero">Enviar</button>
+            <button class="btn-hero" type="submit">Enviar</button>
           </div>
         </form>
       </div>
@@ -232,53 +260,26 @@
     <!--Footer-->
     <footer>
       <div class="footer-top">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <img src="./img/loogo-mark.png" alt="" class="logo-icon">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe perspiciatis veritatis et vel dolorem eum quisquam unde ducimus at.</p>
-            </div>
-            <div class="col-md-2">
-              <h5>Brand</h5>
-              <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h5>Brand</h5>
-              <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5>Brand</h5>
-              <ul>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">feature</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
-              </ul>
+        <div class="container d-flex justify-content-center text-center">
+          <div class="footer-info  ">
+            <a href="#home"><img src="./img/loogo-mark.png" alt="" class="logo-icon"></a>
+            <p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, temporibus?</p>
+            <div class="d-flex justify-content-center">
+              <div class="ft-icon">
+                <i class='bx bxl-facebook-circle'></i>
+              </div>
+              <div class="ft-icon">
+                <i class='bx bxl-instagram-alt'></i>
+              </div>
+              <div class="ft-icon">
+                <i class='bx bxl-twitter'></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              reservado
-            </div>
-            <div class="col-md-6">
-              reservado
-            </div>
-          </div>
-        </div>
+      <div class="footer-bottom d-flex justify-content-center align-items-center w-100 vh-1">
+        <p>Landing hecha por - Alan Olmedo</p>
       </div>
     </footer>
 

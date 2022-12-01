@@ -253,6 +253,9 @@ form input.form-control{
     height: 56px;
 
 }
+label{
+    color: var(--body);
+}
 
 
 form .form-control{
@@ -260,7 +263,22 @@ form .form-control{
     border-radius: 0;
     border: 1px solid var(--gray-1);
 }
+.ft-icon{
+    margin: 10px;
+    cursor: pointer;
 
+}
+
+.ft-icon i{
+    color: var(--body);
+    font-size: 25px;
+    transition: 0.3s;
+}
+.ft-icon i:hover{
+    transform: translateY(-10px);
+    color: var(--primary-dark);
+
+}
 .footer-top{
     padding-bottom: 90px;
     padding: 90px;
@@ -268,15 +286,10 @@ form .form-control{
 
 }
 
-.footer-top a{
-    color: white;
-}
-.footer-top a:hover{
-    color: red;
-}
 
 .footer-bottom{
-    background-color: black;
+    background-color: var(--primary-dark);
+    color: var(--gray-3);
 }
 
 
